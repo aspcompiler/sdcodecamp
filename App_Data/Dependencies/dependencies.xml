@@ -132,6 +132,41 @@
     </References>
   </Dependency>
   <Dependency>
+    <ModuleName>Orchard.Scripting</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Scripting/bin/Orchard.Scripting.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Orchard.Widgets</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Widgets/bin/Orchard.Widgets.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>Orchard.Scripting</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Scripting/bin/Orchard.Scripting.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Themes</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>Orchard.DesignerTools</ModuleName>
+    <VirtualPath>~/Modules/Orchard.DesignerTools/Orchard.DesignerTools.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>Orchard.Widgets</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Widgets/bin/Orchard.Widgets.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
     <ModuleName>Orchard.Email</ModuleName>
     <VirtualPath>~/Modules/Orchard.Email/Orchard.Email.csproj</VirtualPath>
     <LoaderName>DynamicExtensionLoader</LoaderName>
@@ -277,12 +312,6 @@
     <References />
   </Dependency>
   <Dependency>
-    <ModuleName>Orchard.Scripting</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Scripting/bin/Orchard.Scripting.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
     <ModuleName>Orchard.Rules</ModuleName>
     <VirtualPath>~/Modules/Orchard.Rules/bin/Orchard.Rules.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -348,23 +377,6 @@
     <VirtualPath>~/Modules/Orchard.Warmup/bin/Orchard.Warmup.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.Widgets</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Widgets/bin/Orchard.Widgets.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>Orchard.Scripting</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Scripting/bin/Orchard.Scripting.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>Orchard.Themes</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
-      </Reference>
-    </References>
   </Dependency>
   <Dependency>
     <ModuleName>Reports</ModuleName>
